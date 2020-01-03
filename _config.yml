@@ -1,0 +1,35 @@
+title:              Host a website
+description:        Host a static website for free using Github Pages 
+author:             Carles Loriente
+baseurl:            ""
+#url:                "http://localhost:4000" #uncomment for local development
+url:                "https://hostwebsite.github.io"
+email:              ""
+
+# Social Profiles
+twitter_username:   
+github_username:    
+facebook_username:  
+linkedin_username:
+
+# Add your google-analytics ID here to activate google analytics
+google_analytics:
+
+# Disqus Comments
+#disqus:
+    # Leave shortname blank to disable comments site-wide.
+    # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+    #shortname:
+
+    # Build settings
+markdown:           kramdown
+paginate:           5
+paginate_path:      "/posts/page:num/"
+plugins:
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+
+# Build settings
+#theme:              jekyll-theme-clean-blog # uncomment for local development
