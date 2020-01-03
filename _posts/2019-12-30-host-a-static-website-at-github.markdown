@@ -7,7 +7,7 @@ categories: website github
 background: '/assets/images/aws_logo.jpg'
 ---
 
-(https://github.com/ "GitHub") provides hosting for software development version control using Git. If you don't have an account go and create one (/assets/images/its-free.jpg " it's free").
+(https://github.com/ "GitHub") provides hosting for software development version control using Git. If you don't have an account go and create one (/assets/images/its-free.png " it's free").
 
 **Which type of website can host GitHub**
 Take in mind that we are going to store a website in a Git repo, so don't expect advaced functionaIlities beyond some javascript and images.
@@ -24,8 +24,26 @@ You can host a:
 ⋅⋅1. As you can see the name of the repo should be the same as the user
 ⋅⋅2. After the repo name add .github.io
 
-![New repo](/assets/images/repo-created.jpg)
+![New repo](/assets/images/repo-created.png)
 
+3. Download the ![zip file](https://github.com/hostwebsite/hostwebsite.github.io/archive/master.zip) containing the required files.
 
-{% gist 5dbd6acf64090bba9593146185c11183 %}
+4. Unzip the file
 
+5. Edit _config.yml with your own settings
+
+6. Initialize a local Git repo and push it contents to GitHub
+
+```
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/username/username.github.io.git
+git push -u origin master
+```
+
+7. Wait a bit and check the section "GitHub Pages" inside settings of the repo at the GitHub panel
+
+![GitHub Pages settings](/assets/images/githubpages.png)
+
+8.- Done! now you can browse the website
